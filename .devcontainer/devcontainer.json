@@ -18,7 +18,7 @@
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"runArgs": [
-		"-e", "DISPLAY=$DISPLAY",
+		"-e", "DISPLAY=:0.0",
 		"--net", "host",
 		"-v", "/tmp/.X11-unix:/tmp/.X11-unix"
 	]
